@@ -1,0 +1,67 @@
+body{
+	font-family: arial;
+}
+
+main{
+	margin: auto;
+	width: 100%;
+}
+
+h1{
+	color: rgb(112, 0, 160);
+}
+
+.input-grid{
+	display: grid;
+	grid-template-columns: 190px 251px;
+	column-gap: 10px;
+	row-gap: 10px;
+	margin: 10px;
+	align-items: center;
+}
+
+@media(max-width: 450px){
+	.input-grid{
+		grid-template-columns: 1fr;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		row-gap: 5px;
+	}
+}
+
+@media(min-width: 451px){
+	.input-grid{
+		grid-template-columns: 190px 201px;
+	}
+}
+
+.quantity-list, .quantity-list-label, .departure-unit-list, .destination-unit-list, .departure-unit-list-label, .destination-unit-list-label{
+	font-size: 15px;
+	padding: 10px;
+	border-color: rgb(112, 0, 160);
+}
+
+.input-field{
+	font-size: 15px;
+	padding: 10px;
+	border-color: rgb(112, 0, 160);
+}
+
+.output-field{
+	padding: 10px;
+	margin: 10px;
+}
+
+.input-grid{
+	align-items: stretch;
+}
+
+.convert-button{
+	border: none;
+	background-color: rgb(112, 0, 160);
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+	padding: 10px;
+	/*border-radius: 5px;*/
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>UNIT CONVERTER</title>
+		
+		<link rel="stylesheet" href="styles/unit-converter.css">
+	</head>
+	
+	<body>
+		<main>
+			<h1>Unit Converter</h1>
+			
+			<div class="input-grid">
+				<span class="quantity-list-label">Select quantity to convert</span>
+				<select class="quantity-list js-quantity-list">
+					
+				</select>
+				
+				<span class="departure-unit-list-label">Convert From</span>
+				<select class="departure-unit-list js-departure-unit-list">
+					
+				</select>
+				
+				<span class="destination-unit-list-label">Convert To</span>
+				<select class="destination-unit-list js-destination-unit-list">
+					
+				</select>
+				
+				<input placeholder="enter value to convert" class="input-field js-input-field">
+				<button class="convert-button js-convert-button">Convert to fahrenheit</button>
+			</div>
+			
+			<div class="output-grid">
+				<p class="output-field js-output-field">Converted value</p>
+			</div>
+		</main>
+		<script src="scripts/unit-converter.js"></script>
+	</body>
+</html>
